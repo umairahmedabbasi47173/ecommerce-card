@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Document</title>
+    <style>/* --- Card Container Styles --- */
+.product-card {
+    width: 300px; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0; 
+    display: flex;
+    flex-direction: column; 
+    flex-grow: 1; 
+}
+
+.image-area img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.details-area {
+    padding: 15px;
+    flex-grow: 1; 
+}
+
+
+.details-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 10px;
+}
+
+.details-area h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.details-area .rating {
+    color: gold;
+    font-size: 1.1em;
+}
+
+.details-area .description {
+    line-height: 1.5;
+    margin-bottom: 10px; 
+}
+
+.footer-area {
+    padding: 15px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: auto; 
+}
+
+.footer-area .price {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #007bff;
+}
+
+.footer-area .add-to-cart {
+    padding: 8px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}</style>
+</head>
+<body>
+    <div class="product-card">
+     <div class="image-area">
+        <img src="product.jpeg" alt="A sleek product image" loading="lazy">
+    </div>
+
+    <div class="details-area">
+        <div class="details-header">
+            <h3>Product Title Goes Here</h3>
+            <span class="rating">★★★★★</span>
+        </div>
+        
+        <p class="description">
+            This is a brief, engaging description of the product. It needs to be clear and concise. 
+            The length of this text will vary across different cards, but Flexbox will keep the card height uniform!
+        </p>
+    </div>
+
+    <div class="footer-area">
+        <span class="price">$19.99</span>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+</div>
+</body>
+</html>
